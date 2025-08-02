@@ -262,3 +262,21 @@
     }
   }
 }
+
+/*
+   CV Link styling
+   ========================================================================== */
+
+.cv-link {
+  font-weight: 600;
+  color: var(--global-theme-color);
+  
+  &:hover {
+    color: var(--global-hover-color);
+    text-decoration: none;
+  }
+  
+  i {
+    color: #dc3545; // Red color for PDF icon
+  }
+}

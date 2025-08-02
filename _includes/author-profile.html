@@ -36,6 +36,9 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
+      {% if author.cv %}
+        <li><a href="{{ site.baseurl }}{{ author.cv }}" class="cv-link" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV' });"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV</a></li>
+      {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.academia %}
@@ -90,6 +93,12 @@
       {% endif %}      
 
       <!-- Font Awesome icons / Social media -->
+      {% if author.blog %}
+      <li><a href="{{ author.blog }}"><i class="fa fa-home icon-pad-right" aria-hidden="true"></i>Blog</a></li>
+      {% endif %}  
+      {% if author.solvedac %}
+      <li><a href="{{ author.solvedac }}"><i class="fa fa-code icon-pad-right" aria-hidden="true"></i>Solved.ac</a></li>
+      {% endif %}    
       {% if author.artstation %}
         <li><a href="https://www.artstation.com/{{ author.artstation }}"><i class="fab fa-fw fa-artstation icon-pad-right" aria-hidden="true"></i>Artstation</a></li>
       {% endif %}        
@@ -164,7 +173,7 @@
       {% endif %}
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
-      {% endif %}      
+      {% endif %}          
     </ul>
   </div>
 </div>
