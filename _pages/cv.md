@@ -38,21 +38,9 @@ Education
 
 Work Experience
 ======
-* **Software Engineer Intern** (Summer 2023)
-  * Timepercent, Seoul, South Korea
-  * Learned Git, Gitlab, FastAPI basics, and agile development process
-  * Developed a web application for managing the company's internal data with FastAPI
-
-* **[POstechian's POrtal(POPO)](https://popo.poapper.club/) Developer** (Winter 2023 - present)
-  * POSTECH, Pohang, South Korea
-  * Leading and developing the backend for a carpooling service project (Paxi) that makes it easier to find carpool buddies
-  * [POPO Repository](https://github.com/PoApper/popo-nest-api)
-  * [Paxi Repository](https://github.com/PoApper/paxi-popo-nest-api)
-
-* **Berkeley Concurrent Enrollment Student** (Fall 2024)
-  * UC Berkeley, Berkeley, CA, USA
-  * Took Computer Security (CS161)
-  * [Project 2: A Secure File Sharing System](https://github.com/khkim6040/CS161-Proj2) (Main Project of CS161)
+* **Software Engineer Intern** (Summer 2025)
+  * SHIFT UP, Seoul, South Korea
+  * Will be updated
 
 * **Laboratory Intern** (Jan 2025 - May 2025)
   * [OMNIA](https://omnia.postech.ac.kr/), Pohang, South Korea
@@ -60,9 +48,22 @@ Work Experience
   * Developed a unified caching simulator for iterative workloads such as PageRank to optimize cache transfer policies
   * [Cluster Iterative Job Caching Simulator](https://github.com/khkim6040/cluster-iterative-job-caching-simulator)
 
-* **Software Engineer Intern** (Summer 2025)
-  * SHIFT UP, Seoul, South Korea
-  * Will be updated
+* **Berkeley Concurrent Enrollment Student** (Fall 2024)
+  * UC Berkeley, Berkeley, CA, USA
+  * Took Computer Security (CS161)
+  * [Project 2: A Secure File Sharing System](https://github.com/khkim6040/CS161-Proj2) (Main Project of CS161)
+
+* **[POstechian's POrtal(POPO)](https://popo.poapper.club/) Developer** (Winter 2023 - present)
+  * POSTECH, Pohang, South Korea
+  * Leading and developing the backend for a carpooling service project (Paxi) that makes it easier to find carpool buddies
+  * [POPO Repository](https://github.com/PoApper/popo-nest-api)
+  * [Paxi Repository](https://github.com/PoApper/paxi-popo-nest-api)
+
+* **Software Engineer Intern** (Summer 2023)
+  * Timepercent, Seoul, South Korea
+  * Learned Git, Gitlab, FastAPI basics, and agile development process
+  * Developed a web application for managing the company's internal data with FastAPI
+
 
 Skills
 ======
