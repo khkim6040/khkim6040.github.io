@@ -33,14 +33,16 @@ Education
 * [Intro. to Computer Security @ Berkeley](https://fa24.cs161.org/)
 * [Database Systems](https://github.com/khkim6040/CSED421)
 
-**Courses Gonna Take (Fall, 2025):**
-* Operating Systems
+**Courses Taking (Fall, 2025):**
+* [Operating Systems](https://github.com/khkim6040/CSED312)
 
 Work Experience
 ======
 * **Software Engineer Intern** (Summer 2025)
   * SHIFT UP, Seoul, South Korea
-  * Will be updated
+  * Worked on the server team for **Goddess of Victory: Nikke**
+  * Developed automation server patch slack app using Slack Deno SDK
+  * Minigame archiving
 
 * **Laboratory Intern** (Jan 2025 - May 2025)
   * [OMNIA](https://omnia.postech.ac.kr/), Pohang, South Korea
