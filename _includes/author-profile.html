@@ -28,25 +28,25 @@
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><a href="https://postech.ac.kr/eng" target="_blank">{{ author.employer }}</a></li>
+        <li class="author__desktop"><i class="fas fa-fw fa-building icon-pad-right" aria-hidden="true"></i><a href="https://postech.ac.kr/eng" target="_blank">{{ author.employer }}</a></li>
       {% endif %}
       {% if author.cv %}
-      <li><a href="{{ site.baseurl }}{{ author.cv }}" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV' });"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV</a></li>
+        <li class="author__desktop"><a href="{{ site.baseurl }}{{ author.cv }}" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV' });"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV</a></li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        <li class="author__desktop"><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.blog %}
-      <li><a href="{{ author.blog }}"><i class="fas fa-fw fa-home icon-pad-right" aria-hidden="true"></i>Blog</a></li>
+        <li class="author__desktop"><a href="{{ author.blog }}"><i class="fas fa-fw fa-home icon-pad-right" aria-hidden="true"></i>Blog</a></li>
       {% endif %}  
       {% if author.github %}
-      <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+        <li class="author__desktop"><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
       {% endif %}
       {% if author.solvedac %}
-      <li><a href="{{ author.solvedac }}"><i class="fas fa-fw fa-code icon-pad-right" aria-hidden="true"></i>Solved.ac</a></li>
+        <li class="author__desktop"><a href="{{ author.solvedac }}"><i class="fas fa-fw fa-code icon-pad-right" aria-hidden="true"></i>Solved.ac</a></li>
       {% endif %}  
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li class="author__desktop"><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
 
 
@@ -144,7 +144,7 @@
         <li><a href="https://www.pinterest.com/{{ author.pinterest }}"><i class="fab fa-fw fa-pinterest icon-pad-right" aria-hidden="true"></i>Pinterest</a></li>
       {% endif %}            
       {% if author.soundcloud %}
-        <li><a href="https://soundcloud.com/{{ author.soundcloud }}"><i class="fab fa-fw fa-soundcloud icon-pad-right" aria-hidden="true"></i>Soundcloud</a></li>
+        <li class="author__desktop"><a href="https://soundcloud.com/{{ author.soundcloud }}"><i class="fab fa-fw fa-soundcloud icon-pad-right" aria-hidden="true"></i>Soundcloud</a></li>
       {% endif %}      
       {% if author.steam %}
         <li><a href="https://steamcommunity.com/id/{{ author.steam }}"><i class="fab fa-fw fa-steam icon-pad-right" aria-hidden="true"></i>Steam</a></li>
