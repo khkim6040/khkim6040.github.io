@@ -10,6 +10,4 @@
 main:
   - title: "Hobbies"
     url: /hobbies/
-    
-  - title: "CV"
-    url: /cv/
+

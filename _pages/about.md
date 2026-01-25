@@ -7,4 +7,3 @@ redirect_from:
   - /about.html
 ---
 
-줄업시켜주세요~
