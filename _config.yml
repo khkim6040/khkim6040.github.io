@@ -2,6 +2,7 @@
 #
 
 # bundle exec jekyll serve -l -H localhost
+# docker compose up
 
 # Basic Site Settings
 locale                   : "en-US"
