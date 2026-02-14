@@ -22,7 +22,9 @@ After spending a memorable exchange student period in the US, I re-realized that
 
 I decided to learn Japanese after having several hard times, especially communicating with a clerk at a drugstore. Papago didn’t work well, and I tried my best to explain what I was looking for. He also tried his best to understand and help me, but in the end, we completely failed to communicate. I felt really bad.  
 
-So, I've been using Duolingo to learn Japanese for over a year. But, you know, Duolingo is more of a snack app than a real learning tool. Thus, in the summer of 2025, I decided to study Japanese more seriously. I bought some books and started teaching myself. I also registered for the JLPT N3 test this winter. I hope I can pass it.  
+So, I've been using Duolingo to learn Japanese for over a year. But, you know, Duolingo is more of a snack app than a real learning tool. Thus, in the summer of 2025, I decided to study Japanese more seriously. I bought some books and started teaching myself. I also registered for the **JLPT N3** test this winter. I hope I can pass it.  
+
+(26.01.31) I PASSED!!
 
 ### Spanish
 
