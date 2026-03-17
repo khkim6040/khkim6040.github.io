@@ -1,7 +1,13 @@
 (function () {
   var STORAGE_KEY = 'site-lang';
   var DEFAULT_LANG = 'en';
-  var SUPPORTED = ['en', 'ko'];
+  var SUPPORTED = ['en', 'ko', 'ja'];
+
+  var LANG_LABELS = {
+    en: { ko: 'Korean only', ja: 'Japanese only' },
+    ko: { en: 'English only', ko: '한국어만', ja: '日本語のみ' },
+    ja: { en: '英語のみ', ko: '韓国語のみ', ja: '日本語のみ' }
+  };
 
   function getLang() {
     var stored = localStorage.getItem(STORAGE_KEY);
@@ -24,11 +30,15 @@
       if (text) el.textContent = text;
     }
 
-    // Toggle lang-specific content blocks
+    // Toggle lang-specific content blocks (fallback to 'en' if no block for current lang)
     var contentEls = document.querySelectorAll('[data-content-lang]');
     for (var i = 0; i < contentEls.length; i++) {
       var el = contentEls[i];
-      el.style.display = el.getAttribute('data-content-lang') === lang ? '' : 'none';
+      var contentLang = el.getAttribute('data-content-lang');
+      var parent = el.parentNode;
+      var hasLangBlock = parent.querySelector('[data-content-lang="' + lang + '"]');
+      var showLang = hasLangBlock ? lang : 'en';
+      el.style.display = contentLang === showLang ? 'block' : 'none';
     }
 
     // Filter archive items by language
@@ -55,7 +65,8 @@
           el.style.display = '';
           var label = document.createElement('span');
           label.className = 'lang-only-label';
-          label.textContent = postLang === 'ko' ? ' (Korean only)' : ' (English only)';
+          var labels = LANG_LABELS[lang] || LANG_LABELS.en;
+          label.textContent = ' (' + (labels[postLang] || postLang) + ')';
           var titleEl = el.querySelector('.archive__item-title');
           if (titleEl) titleEl.appendChild(label);
         }
@@ -65,13 +76,14 @@
     // Update toggle button
     var btns = document.querySelectorAll('.lang-toggle-btn');
     for (var i = 0; i < btns.length; i++) {
-      var enSpan = btns[i].querySelector('.lang-en');
-      var koSpan = btns[i].querySelector('.lang-ko');
-      if (enSpan) {
-        if (lang === 'en') { enSpan.classList.add('active'); } else { enSpan.classList.remove('active'); }
-      }
-      if (koSpan) {
-        if (lang === 'ko') { koSpan.classList.add('active'); } else { koSpan.classList.remove('active'); }
+      var spans = btns[i].querySelectorAll('span[class^="lang-"]');
+      for (var j = 0; j < spans.length; j++) {
+        var spanLang = spans[j].className.replace('lang-', '').replace(' active', '');
+        if (spanLang === lang) {
+          spans[j].classList.add('active');
+        } else {
+          spans[j].classList.remove('active');
+        }
       }
     }
   }
@@ -86,9 +98,7 @@
     applyLang(lang);
   }
 
-  window.toggleLanguage = function () {
-    var current = getLang();
-    var next = current === 'en' ? 'ko' : 'en';
-    setLang(next);
+  window.setLanguage = function (lang) {
+    setLang(lang);
   };
 })();

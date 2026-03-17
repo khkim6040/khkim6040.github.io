@@ -17,6 +17,8 @@
           <a href="{{ t.url }}">한국어로 읽기</a>
         {% elsif t.lang == "en" %}
           <a href="{{ t.url }}">Read in English</a>
+        {% elsif t.lang == "ja" %}
+          <a href="{{ t.url }}">日本語で読む</a>
         {% endif %}
       {% endfor %}
     </div>

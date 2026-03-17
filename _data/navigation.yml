@@ -11,5 +11,6 @@ main:
   - title: "Hobbies"
     title_en: "Hobbies"
     title_ko: "취미"
+    title_ja: "趣味"
     url: /hobbies/
 
