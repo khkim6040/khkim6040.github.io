@@ -124,6 +124,8 @@ $(document).ready(function () {
   $(".author__urls-wrapper button").on("click", function () {
     $(".author__urls").fadeToggle("fast", function () { });
     $(".author__urls-wrapper button").toggleClass("open");
+    var expanded = $(this).attr("aria-expanded") === "true";
+    $(this).attr("aria-expanded", !expanded);
   });
 
   // Restore the follow menu if toggled on a window resize
