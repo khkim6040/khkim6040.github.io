@@ -20,8 +20,21 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
+  <!-- Quick social icons: visible only on mobile, inline next to profile -->
+  <div class="author__quick-links">
+    {% if author.github %}
+      <a href="https://github.com/{{ author.github }}" aria-label="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if author.blog %}
+      <a href="{{ author.blog }}" aria-label="Blog"><i class="fas fa-fw fa-home" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if author.cv %}
+      <a href="{{ site.baseurl }}{{ author.cv }}" aria-label="CV"><i class="fas fa-fw fa-file-lines" aria-hidden="true"></i></a>
+    {% endif %}
+  </div>
+
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse" aria-label="More links" aria-expanded="false">···</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
