@@ -9,11 +9,11 @@
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <h2 class="archive__item-title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink" data-lang-en="{{ post.title }}" data-lang-ko="{{ post.title_ko | default: post.title }}" data-lang-ja="{{ post.title_ja | default: post.title }}">{{ title }}</a>
     </h2>
-    
+
     {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <p class="archive__item-excerpt" itemprop="description" style="font-size: 1em;" data-lang-en="{{ post.excerpt }}" data-lang-ko="{{ post.excerpt }}" data-lang-ja="{{ post.excerpt_ja | default: post.excerpt }}">{{ post.excerpt }}</p>
     {% endif %}
   </article>
 </div> 

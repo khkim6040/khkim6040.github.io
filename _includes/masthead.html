@@ -13,7 +13,7 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" data-lang-en="{{ link.title_en | default: link.title }}" data-lang-ko="{{ link.title_ko | default: link.title }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" data-lang-en="{{ link.title_en | default: link.title }}" data-lang-ko="{{ link.title_ko | default: link.title }}" data-lang-ja="{{ link.title_ja | default: link.title }}">{{ link.title }}</a></li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
@@ -22,10 +22,10 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
-    <div id="lang-toggle">
-      <a role="button" class="lang-toggle-btn" onclick="toggleLanguage()" title="toggle language">
-        <span class="lang-en">EN</span> / <span class="lang-ko">KO</span>
-      </a>
+    <div id="lang-toggle" class="lang-toggle-btn">
+      <button type="button" class="lang-en" data-lang="en" onclick="setLanguage('en')" aria-label="English"><span class="fi fis fi-us"></span></button>
+      <button type="button" class="lang-ko" data-lang="ko" onclick="setLanguage('ko')" aria-label="한국어"><span class="fi fis fi-kr"></span></button>
+      <button type="button" class="lang-ja" data-lang="ja" onclick="setLanguage('ja')" aria-label="日本語"><span class="fi fis fi-jp"></span></button>
     </div>
   </div>
 </div>

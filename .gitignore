@@ -23,3 +23,6 @@ package-lock.json
 
 # Claude Code instructions (contains personal content)
 CLAUDE.md
+
+# Handoff documents
+**/HANDOFF.md

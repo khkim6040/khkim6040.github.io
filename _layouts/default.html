@@ -9,24 +9,26 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.5.0/css/flag-icons.min.css">
     <style>
       .masthead__inner-wrap { display: flex; align-items: center; justify-content: space-between; }
       .masthead__menu { flex: 1; min-width: 0; }
       #lang-toggle { flex-shrink: 0; margin-left: 1em; }
-      .lang-toggle-btn { cursor: pointer; font-size: 0.85em; font-weight: 600; letter-spacing: 0.02em; padding: 0.25em 0.5em; white-space: nowrap; }
-      .lang-toggle-btn .lang-en,
-      .lang-toggle-btn .lang-ko { opacity: 0.4; transition: opacity 0.2s; }
-      .lang-toggle-btn .lang-en.active,
-      .lang-toggle-btn .lang-ko.active { opacity: 1; }
+      .lang-toggle-btn { white-space: nowrap; display: flex; gap: 0.3em; align-items: center; }
+      .lang-toggle-btn button { cursor: pointer; opacity: 0.35; transition: opacity 0.2s; background: none; border: none; padding: 0.1em; line-height: 1; }
+      .lang-toggle-btn button.active { opacity: 1; }
+      .lang-toggle-btn .fi.fis { width: 1.4em; height: 1.4em; border-radius: 50%; background-size: cover; vertical-align: middle; }
       .lang-only-label { font-size: 0.75em; opacity: 0.6; margin-left: 0.4em; }
       .translation-banner { padding: 0.5em 1em; background: var(--global-code-bg-color, #f0f0f0); border-radius: 4px; margin-bottom: 1em; font-size: 0.9em; }
-      html[data-lang="en"] [data-content-lang="ko"] { display: none; }
-      html[data-lang="ko"] [data-content-lang="en"] { display: none; }
+      [data-content-lang] { display: none; }
+      html[data-lang="en"] [data-content-lang="en"] { display: block; }
+      html[data-lang="ko"] [data-content-lang="ko"] { display: block; }
+      html[data-lang="ja"] [data-content-lang="ja"] { display: block; }
     </style>
     <script>
       (function() {
         var lang = localStorage.getItem('site-lang');
-        if (lang === 'ko' || lang === 'en') {
+        if (lang === 'ko' || lang === 'en' || lang === 'ja') {
           document.documentElement.setAttribute('data-lang', lang);
         }
       })();
