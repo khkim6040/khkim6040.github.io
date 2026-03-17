@@ -10,9 +10,10 @@ layout: compress
     {% include head.html %}
     {% include head/custom.html %}
     <style>
-      #lang-toggle { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
-      .masthead__inner-wrap { position: relative; }
-      .lang-toggle-btn { cursor: pointer; font-size: 0.85em; font-weight: 600; letter-spacing: 0.02em; padding: 0.25em 0.5em; }
+      .masthead__inner-wrap { display: flex; align-items: center; justify-content: space-between; }
+      .masthead__menu { flex: 1; min-width: 0; }
+      #lang-toggle { flex-shrink: 0; margin-left: 1em; }
+      .lang-toggle-btn { cursor: pointer; font-size: 0.85em; font-weight: 600; letter-spacing: 0.02em; padding: 0.25em 0.5em; white-space: nowrap; }
       .lang-toggle-btn .lang-en,
       .lang-toggle-btn .lang-ko { opacity: 0.4; transition: opacity 0.2s; }
       .lang-toggle-btn .lang-en.active,
