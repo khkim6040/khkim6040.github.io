@@ -1,0 +1,24 @@
+{% if page.ref %}
+  {% assign translations = "" | split: "" %}
+  {% for p in site.posts %}
+    {% if p.ref == page.ref and p.url != page.url %}
+      {% assign translations = translations | push: p %}
+    {% endif %}
+  {% endfor %}
+  {% for p in site.pages %}
+    {% if p.ref == page.ref and p.url != page.url %}
+      {% assign translations = translations | push: p %}
+    {% endif %}
+  {% endfor %}
+  {% if translations.size > 0 %}
+    <div class="translation-banner">
+      {% for t in translations %}
+        {% if t.lang == "ko" %}
+          <a href="{{ t.url }}">한국어로 읽기</a>
+        {% elsif t.lang == "en" %}
+          <a href="{{ t.url }}">Read in English</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endif %}
