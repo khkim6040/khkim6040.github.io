@@ -17,9 +17,17 @@ layout: compress
       .lang-toggle-btn .lang-ko.active { opacity: 1; }
       .lang-only-label { font-size: 0.75em; opacity: 0.6; margin-left: 0.4em; }
       .translation-banner { padding: 0.5em 1em; background: var(--global-code-bg-color, #f0f0f0); border-radius: 4px; margin-bottom: 1em; font-size: 0.9em; }
-      [data-content-lang] { display: none; }
-      [data-content-lang="en"] { display: block; }
+      html[data-lang="en"] [data-content-lang="ko"] { display: none; }
+      html[data-lang="ko"] [data-content-lang="en"] { display: none; }
     </style>
+    <script>
+      (function() {
+        var lang = localStorage.getItem('site-lang');
+        if (lang === 'ko' || lang === 'en') {
+          document.documentElement.setAttribute('data-lang', lang);
+        }
+      })();
+    </script>
   </head>
 
   <body>
