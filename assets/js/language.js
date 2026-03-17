@@ -18,6 +18,7 @@
     if (SUPPORTED.indexOf(lang) === -1) return;
     localStorage.setItem(STORAGE_KEY, lang);
     document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
     applyLang(lang);
   }
 
@@ -74,16 +75,13 @@
     }
 
     // Update toggle button
-    var btns = document.querySelectorAll('.lang-toggle-btn');
-    for (var i = 0; i < btns.length; i++) {
-      var spans = btns[i].querySelectorAll('span[class^="lang-"]');
-      for (var j = 0; j < spans.length; j++) {
-        var spanLang = spans[j].className.replace('lang-', '').replace(' active', '');
-        if (spanLang === lang) {
-          spans[j].classList.add('active');
-        } else {
-          spans[j].classList.remove('active');
-        }
+    var toggleEls = document.querySelectorAll('.lang-toggle-btn [data-lang]');
+    for (var i = 0; i < toggleEls.length; i++) {
+      var el = toggleEls[i];
+      if (el.getAttribute('data-lang') === lang) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
       }
     }
   }
