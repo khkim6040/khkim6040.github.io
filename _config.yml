@@ -190,6 +190,7 @@ exclude:
   - README
   - tmp
   - vendor
+  - docs
 keep_files:
   - .git
   - .svn
@@ -237,6 +238,7 @@ defaults:
       comments: true
       share: false
       related: true
+      lang: en
   # _pages
   - scope:
       path: ""

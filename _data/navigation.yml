@@ -9,5 +9,7 @@
 
 main:
   - title: "Hobbies"
+    title_en: "Hobbies"
+    title_ko: "취미"
     url: /hobbies/
 

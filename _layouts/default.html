@@ -5,10 +5,32 @@ layout: compress
 {% include base_path %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %} data-lang="en">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      .masthead__inner-wrap { display: flex; align-items: center; justify-content: space-between; }
+      .masthead__menu { flex: 1; min-width: 0; }
+      #lang-toggle { flex-shrink: 0; margin-left: 1em; }
+      .lang-toggle-btn { cursor: pointer; font-size: 0.85em; font-weight: 600; letter-spacing: 0.02em; padding: 0.25em 0.5em; white-space: nowrap; }
+      .lang-toggle-btn .lang-en,
+      .lang-toggle-btn .lang-ko { opacity: 0.4; transition: opacity 0.2s; }
+      .lang-toggle-btn .lang-en.active,
+      .lang-toggle-btn .lang-ko.active { opacity: 1; }
+      .lang-only-label { font-size: 0.75em; opacity: 0.6; margin-left: 0.4em; }
+      .translation-banner { padding: 0.5em 1em; background: var(--global-code-bg-color, #f0f0f0); border-radius: 4px; margin-bottom: 1em; font-size: 0.9em; }
+      html[data-lang="en"] [data-content-lang="ko"] { display: none; }
+      html[data-lang="ko"] [data-content-lang="en"] { display: none; }
+    </style>
+    <script>
+      (function() {
+        var lang = localStorage.getItem('site-lang');
+        if (lang === 'ko' || lang === 'en') {
+          document.documentElement.setAttribute('data-lang', lang);
+        }
+      })();
+    </script>
   </head>
 
   <body>
@@ -26,6 +48,7 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+    <script src="{{ base_path }}/assets/js/language.js"></script>
 
   </body>
 </html>

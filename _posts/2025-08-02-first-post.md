@@ -2,6 +2,8 @@
 title: 'first post'
 date: 2025-08-02
 permalink: /posts/2025/08/02/
+lang: ko
+ref: first-post
 categories:
   - blog
 tags:
