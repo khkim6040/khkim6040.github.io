@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "Gwanho's Page"
+title_ko: "관호의 페이지"
+title_ja: "グァンホのページ"
 author_profile: true
 redirect_from:
   - /about/
