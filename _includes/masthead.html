@@ -22,12 +22,17 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
-    <div id="lang-toggle" class="lang-toggle-btn">
-      <button type="button" class="lang-en" data-lang="en" onclick="setLanguage('en')" aria-label="English"><span class="fi fis fi-us"></span></button>
-      <button type="button" class="lang-ko" data-lang="ko" onclick="setLanguage('ko')" aria-label="한국어"><span class="fi fis fi-kr"></span></button>
-      <button type="button" class="lang-ja" data-lang="ja" onclick="setLanguage('ja')" aria-label="日本語"><span class="fi fis fi-jp"></span></button>
-      <span class="lang-coming-soon-wrap"><button type="button" class="lang-coming-soon" aria-label="中文 - 即将推出" disabled><span class="fi fis fi-cn"></span></button><span class="coming-soon-tooltip">即将推出</span></span>
-      <span class="lang-coming-soon-wrap"><button type="button" class="lang-coming-soon" aria-label="Español - Próximamente" disabled><span class="fi fis fi-es"></span></button><span class="coming-soon-tooltip">Próximamente</span></span>
+    <div id="lang-toggle" class="lang-dropdown">
+      <button type="button" class="lang-dropdown__trigger" aria-label="Language" aria-expanded="false">
+        <span class="lang-dropdown__current-flag fi fis fi-us"></span>
+      </button>
+      <div class="lang-dropdown__menu">
+        <button type="button" data-lang="en" aria-label="English"><span class="fi fis fi-us"></span></button>
+        <button type="button" data-lang="ko" aria-label="한국어"><span class="fi fis fi-kr"></span></button>
+        <button type="button" data-lang="ja" aria-label="日本語"><span class="fi fis fi-jp"></span></button>
+        <span class="lang-coming-soon-wrap"><button type="button" class="lang-coming-soon" aria-label="中文 - 即将推出" disabled><span class="fi fis fi-cn"></span></button><span class="coming-soon-tooltip">即将推出</span></span>
+        <span class="lang-coming-soon-wrap"><button type="button" class="lang-coming-soon" aria-label="Español - Próximamente" disabled><span class="fi fis fi-es"></span></button><span class="coming-soon-tooltip">Próximamente</span></span>
+      </div>
     </div>
   </div>
 </div>

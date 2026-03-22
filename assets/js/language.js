@@ -74,15 +74,20 @@
       }
     }
 
-    // Update toggle button
-    var toggleEls = document.querySelectorAll('.lang-toggle-btn [data-lang]');
-    for (var i = 0; i < toggleEls.length; i++) {
-      var el = toggleEls[i];
+    // Update dropdown: active state + trigger flag
+    var FLAG_MAP = { en: 'fi-us', ko: 'fi-kr', ja: 'fi-jp' };
+    var menuBtns = document.querySelectorAll('.lang-dropdown__menu [data-lang]');
+    for (var i = 0; i < menuBtns.length; i++) {
+      var el = menuBtns[i];
       if (el.getAttribute('data-lang') === lang) {
         el.classList.add('active');
       } else {
         el.classList.remove('active');
       }
+    }
+    var trigger = document.querySelector('.lang-dropdown__current-flag');
+    if (trigger && FLAG_MAP[lang]) {
+      trigger.className = 'lang-dropdown__current-flag fi fis ' + FLAG_MAP[lang];
     }
   }
 
@@ -96,7 +101,43 @@
     applyLang(lang);
   }
 
-  window.setLanguage = function (lang) {
-    setLang(lang);
+  window.setLanguage = function (l) {
+    setLang(l);
   };
+
+  // Dropdown open/close
+  function initDropdown() {
+    var dropdown = document.querySelector('.lang-dropdown');
+    var trigger = document.querySelector('.lang-dropdown__trigger');
+    if (!dropdown || !trigger) return;
+
+    trigger.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = dropdown.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Select language from menu
+    var menuBtns = dropdown.querySelectorAll('.lang-dropdown__menu [data-lang]');
+    for (var i = 0; i < menuBtns.length; i++) {
+      menuBtns[i].addEventListener('click', function (e) {
+        e.stopPropagation();
+        setLang(this.getAttribute('data-lang'));
+        dropdown.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    // Close on outside click
+    document.addEventListener('click', function () {
+      dropdown.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDropdown);
+  } else {
+    initDropdown();
+  }
 })();
