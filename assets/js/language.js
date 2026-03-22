@@ -128,10 +128,30 @@
       });
     }
 
+    // Coming-soon: toggle tooltip on click, dismiss on outside click
+    var comingSoonWraps = dropdown.querySelectorAll('.lang-coming-soon-wrap');
+    for (var i = 0; i < comingSoonWraps.length; i++) {
+      comingSoonWraps[i].addEventListener('click', function (e) {
+        e.stopPropagation();
+        var wasOpen = this.classList.contains('show-tooltip');
+        // Close all other tooltips first
+        for (var j = 0; j < comingSoonWraps.length; j++) {
+          comingSoonWraps[j].classList.remove('show-tooltip');
+        }
+        if (!wasOpen) {
+          this.classList.add('show-tooltip');
+        }
+      });
+    }
+
     // Close on outside click
     document.addEventListener('click', function () {
       dropdown.classList.remove('open');
       trigger.setAttribute('aria-expanded', 'false');
+      // Also dismiss any open coming-soon tooltips
+      for (var i = 0; i < comingSoonWraps.length; i++) {
+        comingSoonWraps[i].classList.remove('show-tooltip');
+      }
     });
   }
 
