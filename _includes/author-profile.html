@@ -29,7 +29,7 @@
       <a href="{{ author.blog }}" aria-label="Blog"><i class="fas fa-fw fa-home" aria-hidden="true"></i></a>
     {% endif %}
     {% if author.cv %}
-      <a href="{{ site.baseurl }}{{ author.cv }}" aria-label="CV"><i class="fas fa-fw fa-file-lines" aria-hidden="true"></i></a>
+      <a href="{{ site.baseurl }}{{ author.cv }}" aria-label="CV" data-cv-link data-cv-en="{{ site.baseurl }}{{ author.cv }}" {% if author.cv_ko %}data-cv-ko="{{ site.baseurl }}{{ author.cv_ko }}"{% endif %}><i class="fas fa-fw fa-file-lines" aria-hidden="true"></i></a>
     {% endif %}
   </div>
 
@@ -44,7 +44,7 @@
         <li><i class="fas fa-fw fa-building icon-pad-right" aria-hidden="true"></i><a href="https://www.naverfincorp.com/" target="_blank">{{ author.employer }}</a></li>
       {% endif %}
       {% if author.cv %}
-        <li><a href="{{ site.baseurl }}{{ author.cv }}" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV' });"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV</a></li>
+        <li><a href="{{ site.baseurl }}{{ author.cv }}" data-cv-link data-cv-en="{{ site.baseurl }}{{ author.cv }}" {% if author.cv_ko %}data-cv-ko="{{ site.baseurl }}{{ author.cv_ko }}"{% endif %} onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV' });"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV</a></li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>

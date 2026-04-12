@@ -74,6 +74,14 @@
       }
     }
 
+    // Update CV links based on language
+    var cvLinks = document.querySelectorAll('[data-cv-link]');
+    for (var i = 0; i < cvLinks.length; i++) {
+      var el = cvLinks[i];
+      var href = el.getAttribute('data-cv-' + lang) || el.getAttribute('data-cv-en');
+      if (href) el.setAttribute('href', href);
+    }
+
     // Update dropdown: active state + trigger flag
     var FLAG_MAP = { en: 'fi-us', ko: 'fi-kr', ja: 'fi-jp' };
     var menuBtns = document.querySelectorAll('.lang-dropdown__menu [data-lang]');

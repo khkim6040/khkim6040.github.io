@@ -29,7 +29,8 @@ author:
   employer         : "Naver Financial"
   uri              : # URL
   email            : "khkim6040@gmail.com"
-  cv               : "/files/cv.pdf"
+  cv               : "/files/resume_en.pdf"
+  cv_ko            : "/files/resume_ko.pdf"
 
   # Academic websites
   academia         : # URL
