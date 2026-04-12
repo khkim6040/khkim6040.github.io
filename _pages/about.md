@@ -19,6 +19,7 @@ redirect_from:
 - [Korean Resume Builder](https://resume.gwanho.com/) — Resume builder optimized for Korean job market ([repo](https://github.com/khkim6040/resume-kr))
 - [Adulting Guide](https://adulting.gwanho.com/) — Practical living guide for young adults in their 20s ([repo](https://github.com/khkim6040/adulting-kr))
 - [AI Conversation Archive](https://skillful-cake-656.notion.site/26eb3580606d404abdb98adae50af79d?v=966b9b34165a4a9ab841fafc47f2aa5a) — Curated useful AI conversations
+- [Vanish Pointer](https://github.com/khkim6040/vanish-pointer) — macOS menu bar app that hides the cursor while you scroll ([repo](https://github.com/khkim6040/vanish-pointer))
 
 </div>
 
@@ -32,6 +33,7 @@ redirect_from:
 - [한국어 특화 이력서 빌더](https://resume.gwanho.com/) - 한국 취업 시장에 최적화된 이력서 빌더 ([repo](https://github.com/khkim6040/resume-kr))
 - [어른이 가이드](https://adulting.gwanho.com/) - 20대를 위한 실생활 가이드 ([repo](https://github.com/khkim6040/adulting-kr))
 - [AI 대화 아카이브](https://skillful-cake-656.notion.site/26eb3580606d404abdb98adae50af79d?v=966b9b34165a4a9ab841fafc47f2aa5a) - 쓸모 있을 것 같은 AI와의 대화 모음
+- [Vanish Pointer](https://github.com/khkim6040/vanish-pointer) - 스크롤 시 커서를 자동으로 숨겨주는 macOS 메뉴바 앱 ([repo](https://github.com/khkim6040/vanish-pointer))
 
 </div>
 
@@ -45,6 +47,7 @@ redirect_from:
 - [韓国語特化履歴書ビルダー](https://resume.gwanho.com/) — 韓国就職市場に最適化された履歴書ビルダー ([repo](https://github.com/khkim6040/resume-kr))
 - [大人ガイド](https://adulting.gwanho.com/) — 20代のための実生活ガイド ([repo](https://github.com/khkim6040/adulting-kr))
 - [AI会話アーカイブ](https://skillful-cake-656.notion.site/26eb3580606d404abdb98adae50af79d?v=966b9b34165a4a9ab841fafc47f2aa5a) — 役に立ちそうなAIとの会話コレクション
+- [Vanish Pointer](https://github.com/khkim6040/vanish-pointer) — スクロール時にカーソルを自動で隠すmacOSメニューバーアプリ ([repo](https://github.com/khkim6040/vanish-pointer))
 
 </div>
 
