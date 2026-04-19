@@ -1,4 +1,5 @@
 ---
+layout: book-chapter
 title: "503 에러부터 시작하는 Istio"
 book: "503 에러부터 시작하는 Istio"
 book_slug: "istio"
@@ -8,6 +9,9 @@ date: 2026-04-19
 cover_image: "images/books/istio-cover.png"
 permalink: /books/istio/
 excerpt: "Kubernetes 환경의 백엔드 개발자를 위한 Istio 서비스 메시 실전 가이드"
+next_chapter:
+  url: "/books/istio/ch01/"
+  title: "1장. 서비스 메시, 우리 팀에 정말 필요한가?"
 ---
 
 ![503 에러부터 시작하는 Istio]({{ site.baseurl }}/images/books/istio-cover.png){: style="max-width: 300px; display: block; margin: 0 auto 2em;" }

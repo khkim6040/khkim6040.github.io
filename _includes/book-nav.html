@@ -7,9 +7,13 @@
     <span></span>
   {% endif %}
 
-  <a href="{{ site.baseurl }}/books/{{ page.book_slug }}/" style="text-decoration: none;">
-    목차
-  </a>
+  {% unless page.book_role == "index" %}
+    <a href="{{ site.baseurl }}/books/{{ page.book_slug }}/" style="text-decoration: none;">
+      목차
+    </a>
+  {% else %}
+    <span></span>
+  {% endunless %}
 
   {% if page.next_chapter %}
     <a href="{{ page.next_chapter.url }}" style="text-decoration: none;">
