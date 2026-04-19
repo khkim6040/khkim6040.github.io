@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Books"
+title_ko: "저서"
+title_ja: "著書"
+permalink: /books/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for post in site.books %}
+  {% if post.book_role == "index" %}
+    {% include archive-single-book.html %}
+  {% endif %}
+{% endfor %}

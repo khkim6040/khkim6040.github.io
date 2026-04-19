@@ -8,6 +8,11 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+  - title: "Books"
+    title_en: "Books"
+    title_ko: "저서"
+    title_ja: "著書"
+    url: /books/
   - title: "Hobbies"
     title_en: "Hobbies"
     title_ko: "취미"

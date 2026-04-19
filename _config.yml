@@ -221,6 +221,9 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  books:
+    output: true
+    permalink: /books/:path/
   hobbies:
     output: true
     permalink: /:collection/:path/
@@ -244,6 +247,14 @@ defaults:
   - scope:
       path: ""
       type: pages
+    values:
+      layout: single
+      author_profile: true
+
+  # _books
+  - scope:
+      path: ""
+      type: books
     values:
       layout: single
       author_profile: true
