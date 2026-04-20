@@ -10,7 +10,7 @@
 main:
   - title: "Books"
     title_en: "Books"
-    title_ko: "저서"
+    title_ko: "책"
     title_ja: "著書"
     url: /books/
   - title: "Hobbies"
