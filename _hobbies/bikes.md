@@ -34,6 +34,16 @@ Crossing the east coast with a bicycle from Pohang to the Unification Observator
 
 ![East Coast Cross Country]({{ site.baseurl }}/images/eastcoast_cross_country.png)
 
+### Spring 2026
+Rode the Geum River (금강) and Ocheon (오천) bike paths over two days, ~150 km per day.
+
+![26 Crossing]({{ site.baseurl }}/images/26crossing.jpg)
+
+<video style="width: 100%; max-width: 300px; margin: 10px;" controls loading="lazy">
+    <source src="{{ site.baseurl }}/videos/26crossing2.mp4" type="video/mp4">
+    <p>Your browser doesn't support HTML5 video. Here is a <a href="{{ site.baseurl }}/videos/26crossing2.mp4">link to the video</a> instead.</p>
+</video>
+
 </div>
 
 <div data-content-lang="ja" markdown="1">
@@ -61,5 +71,15 @@ UCB交換留学中に、サンフランシスコ、サンノゼ、シリコン�
 浦項から江原道高城の統一展望台まで東海岸自転車縦断、400km
 
 ![東海岸縦断]({{ site.baseurl }}/images/eastcoast_cross_country.png)
+
+### 2026年春
+錦江（금강）と五川（오천）の自転車道を2日間で走破、1日約150km。
+
+![26 Crossing]({{ site.baseurl }}/images/26crossing.jpg)
+
+<video style="width: 100%; max-width: 300px; margin: 10px;" controls loading="lazy">
+    <source src="{{ site.baseurl }}/videos/26crossing2.mp4" type="video/mp4">
+    <p>お使いのブラウザはHTML5動画に対応していません。<a href="{{ site.baseurl }}/videos/26crossing2.mp4">動画リンク</a>をご利用ください。</p>
+</video>
 
 </div>
