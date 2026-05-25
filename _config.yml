@@ -29,8 +29,8 @@ author:
   employer         : "Naver Financial"
   uri              : # URL
   email            : "khkim6040@gmail.com"
-  cv               : "/files/resume_en.pdf"
-  cv_ko            : "/files/resume_ko.pdf"
+  cv               : "/contents/files/resume_en.pdf"
+  cv_ko            : "/contents/files/resume_ko.pdf"
 
   # Academic websites
   academia         : # URL
@@ -91,7 +91,7 @@ author:
 #     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  # filename of teaser fallback teaser image placed in /contents/images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true

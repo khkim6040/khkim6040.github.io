@@ -14,9 +14,10 @@ excerpt_ja: "ミニマリズムと自己成長を軸にした読書の好みと�
 - Just Do It
 - Minimalism
 
-![My favorite book]({{ site.baseurl }}/images/fav_book.png)
-
-*My favorite book: Affected the way I think and live*
+<figure>
+  <img src="{{ site.baseurl }}/contents/images/fav_book.png" alt="My favorite book">
+  <figcaption>My favorite book: Affected the way I think and live</figcaption>
+</figure>
 
 ## Books
 
@@ -36,9 +37,10 @@ excerpt_ja: "ミニマリズムと自己成長を軸にした読書の好みと�
 - Just Do It
 - ミニマリズム
 
-![一番好きな本]({{ site.baseurl }}/images/fav_book.png)
-
-*一番好きな本：考え方と生き方に影響を与えた本*
+<figure>
+  <img src="{{ site.baseurl }}/contents/images/fav_book.png" alt="一番好きな本">
+  <figcaption>一番好きな本：考え方と生き方に影響を与えた本</figcaption>
+</figure>
 
 ## 本
 

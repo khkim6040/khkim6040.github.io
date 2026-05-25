@@ -10,10 +10,10 @@ redirect_from:
 {% include base_path %}
 
 <div style="margin-bottom: 1.5em;">
-  <a href="{{ site.baseurl }}/files/resume_en.pdf" class="btn" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV_EN' });">
+  <a href="{{ site.baseurl }}/contents/files/resume_en.pdf" class="btn" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV_EN' });">
     <i class="fas fa-file-pdf"></i> English
   </a>
-  <a href="{{ site.baseurl }}/files/resume_ko.pdf" class="btn" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV_KO' });">
+  <a href="{{ site.baseurl }}/contents/files/resume_ko.pdf" class="btn" onclick="gtag('event', 'click', { 'event_category': 'Download', 'event_label': 'CV_KO' });">
     <i class="fas fa-file-pdf"></i> 한국어
   </a>
 </div>
