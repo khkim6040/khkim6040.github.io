@@ -193,8 +193,8 @@ li ol {
 figure {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
           align-items: flex-start;
   flex-wrap: wrap;
@@ -202,8 +202,9 @@ figure {
 
   img,
   iframe,
+  video,
   .fluid-width-video-wrapper {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   img {
@@ -251,6 +252,8 @@ figcaption {
   color: var(--global-fig-caption-color);
   font-family: $caption-font-family;
   font-size: $type-size-6;
+  text-align: center;
+  width: 100%;
 
   a {
     color: inherit;

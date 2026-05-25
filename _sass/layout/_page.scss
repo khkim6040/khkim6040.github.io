@@ -50,6 +50,26 @@
 
 .page__content {
 
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+
+    &.landscape {
+      max-width: 100%;
+      width: auto;
+      height: 450px;
+    }
+  }
+
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid var(--global-border-color);
