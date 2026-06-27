@@ -13,7 +13,7 @@
     </h2>
 
     {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description" style="font-size: 1em;" data-lang-en="{{ post.excerpt }}" data-lang-ko="{{ post.excerpt }}" data-lang-ja="{{ post.excerpt_ja | default: post.excerpt }}">{{ post.excerpt }}</p>
+      <p class="archive__item-excerpt" itemprop="description" style="font-size: 1em;" data-lang-en="{{ post.excerpt }}" data-lang-ko="{{ post.excerpt_ko | default: post.excerpt }}" data-lang-ja="{{ post.excerpt_ja | default: post.excerpt }}">{{ post.excerpt }}</p>
     {% endif %}
   </article>
 </div> 
