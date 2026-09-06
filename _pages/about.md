@@ -19,6 +19,7 @@ redirect_from:
 - [Korean Resume Builder](https://resume.gwanho.com/) — Resume builder optimized for Korean job market
 - [Adulting Guide](https://adulting.gwanho.com/) — Practical living guide for young adults in their 20s
 - [Vanish Pointer](https://github.com/khkim6040/vanish-pointer) — macOS menu bar app that hides the cursor while you scroll
+- [Browser Fingerprint Lab](https://fingerprint.gwanho.com/) — What a browser reveals just by visiting a page
 
 </div>
 
@@ -32,6 +33,7 @@ redirect_from:
 - [한국어 특화 이력서 빌더](https://resume.gwanho.com/) - 한국 취업 시장에 최적화된 이력서 빌더
 - [어른이 가이드](https://adulting.gwanho.com/) - 20대를 위한 실생활 가이드
 - [Vanish Pointer](https://github.com/khkim6040/vanish-pointer) - 스크롤 시 커서를 자동으로 숨겨주는 macOS 메뉴바 앱
+- [Browser Fingerprint Lab](https://fingerprint.gwanho.com/) - 브라우저 접속만으로 알아낼 수 있는 것들
 
 </div>
 
@@ -45,6 +47,7 @@ redirect_from:
 - [韓国語特化履歴書ビルダー](https://resume.gwanho.com/) — 韓国就職市場に最適化された履歴書ビルダー
 - [大人ガイド](https://adulting.gwanho.com/) — 20代のための実生活ガイド
 - [Vanish Pointer](https://github.com/khkim6040/vanish-pointer) — スクロール時にカーソルを自動で隠すmacOSメニューバーアプリ
+- [Browser Fingerprint Lab](https://fingerprint.gwanho.com/) — アクセスするだけで分かること
 
 </div>
 
