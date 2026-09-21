@@ -9,7 +9,8 @@ redirect_from:
 <style>
   /* 페이지 제목 자리에 헤더 사진을 가로로 긴 띠로 넣는다. 초점은 두 주탑 사이 수평선의 해(세로 약 68% 지점) */
   .page__hero { margin-bottom: 0; }
-  .page__hero-image { height: clamp(180px, 22vw, 260px); object-fit: cover; object-position: 50% 68%; border-radius: 4px; }
+  /* .page__content img의 max-width: 450px보다 특이도를 높여야 한다 */
+  .page__content .page__hero-image { max-width: none; height: clamp(180px, 22vw, 260px); object-fit: cover; object-position: 50% 68%; border-radius: 4px; }
 </style>
 
 <div class="page__hero">
