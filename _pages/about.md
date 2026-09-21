@@ -7,16 +7,15 @@ redirect_from:
 ---
 
 <style>
-  /* 페이지 제목 자리에 헤더 사진을 가로로 긴 띠로 넣는다. 초점은 두 주탑 사이 수평선의 해(세로 약 68% 지점) */
-  .page__hero { margin-bottom: 0; }
-  /* .page__content img의 max-width: 450px보다 특이도를 높여야 한다 */
-  .page__content .page__hero-image { max-width: none; height: clamp(180px, 22vw, 260px); object-fit: cover; object-position: 50% 68%; border-radius: 4px; }
+  /* 페이지 제목 자리에 헤더 사진을 본문 폭에 맞춰 원본 비율로 넣는다. .page__content img의 max-width: 450px보다 특이도를 높여야 한다 */
+  .page__content .page__hero-image { max-width: none; }
+  .page__content figure.page__hero { margin-top: 0; }
 </style>
 
-<div class="page__hero">
+<figure class="page__hero">
   <img src="/contents/images/header.jpg" alt="Golden Gate Bridge at Sunset" class="page__hero-image">
-  <span class="page__hero-caption">Golden Gate Bridge at Sunset</span>
-</div>
+  <figcaption><i>Golden Gate Bridge at Sunset</i></figcaption>
+</figure>
 
 <div data-content-lang="en" markdown="1">
 
