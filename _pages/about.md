@@ -4,10 +4,22 @@ title: "Gwanho's Page"
 title_ko: "관호의 페이지"
 title_ja: "グァンホのページ"
 author_profile: true
+header:
+  image: header.jpg
+  caption: "Golden Gate Bridge at Sunset"
 redirect_from:
   - /about/
   - /about.html
 ---
+
+<style>
+  /* 메인 페이지만: 데스크톱의 고정 사이드바가 히어로 이미지를 덮지 않도록 본문과 함께 흐르게 한다 */
+  @media screen and (min-width: 1024px) {
+    #main { position: relative; }
+    /* greedy-navigation.js가 인라인으로 masthead 높이만큼 padding-top을 넣으므로 !important 필요 */
+    .sidebar { position: absolute; top: 0; padding-top: 0 !important; }
+  }
+</style>
 
 <div data-content-lang="en" markdown="1">
 
