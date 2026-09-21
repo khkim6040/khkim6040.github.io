@@ -1,25 +1,21 @@
 ---
 permalink: /
-title: "Gwanho's Page"
-title_ko: "관호의 페이지"
-title_ja: "グァンホのページ"
 author_profile: true
-header:
-  image: header.jpg
-  caption: "Golden Gate Bridge at Sunset"
 redirect_from:
   - /about/
   - /about.html
 ---
 
 <style>
-  /* 메인 페이지만: 데스크톱의 고정 사이드바가 히어로 이미지를 덮지 않도록 본문과 함께 흐르게 한다 */
-  @media screen and (min-width: 1024px) {
-    #main { position: relative; }
-    /* greedy-navigation.js가 인라인으로 masthead 높이만큼 padding-top을 넣으므로 !important 필요 */
-    .sidebar { position: absolute; top: 0; padding-top: 0 !important; }
-  }
+  /* 페이지 제목 자리에 헤더 사진을 가로로 긴 띠로 넣는다. 초점은 두 주탑 사이 수평선의 해(세로 약 68% 지점) */
+  .page__hero { margin-bottom: 0; }
+  .page__hero-image { height: clamp(180px, 22vw, 260px); object-fit: cover; object-position: 50% 68%; border-radius: 4px; }
 </style>
+
+<div class="page__hero">
+  <img src="/contents/images/header.jpg" alt="Golden Gate Bridge at Sunset" class="page__hero-image">
+  <span class="page__hero-caption">Golden Gate Bridge at Sunset</span>
+</div>
 
 <div data-content-lang="en" markdown="1">
 
