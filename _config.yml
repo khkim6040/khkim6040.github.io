@@ -128,7 +128,6 @@ og_image                 :  "profile.png" # Social media default site image
 
 # Analytics
 analytics:
-  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          : "G-XK5VK9Q1MG"
 
