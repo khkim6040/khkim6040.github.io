@@ -1,5 +1,5 @@
-# Base image: Ruby with necessary dependencies for Jekyll
-FROM ruby:3.2
+# GitHub Pages와 동일한 Ruby 3.3. (Ruby 4.0은 github-pages가 의존하는 commonmarker가 지원하지 않는다)
+FROM ruby:3.3
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -12,23 +12,23 @@ RUN apt-get update && apt-get install -y \
 RUN groupadd -g 1000 vscode && \
     useradd -m -u 1000 -g vscode vscode
 
+# Gemfile은 저장소 마운트 경로(/usr/src/app) 밖에 둔다.
+# 호스트에서 다른 Ruby로 생성된 Gemfile.lock이 마운트로 덮어써져 컨테이너 gem 해석을 깨는 것을 막는다.
+WORKDIR /usr/src/gems
+COPY --chown=vscode:vscode Gemfile ./
+ENV BUNDLE_GEMFILE=/usr/src/gems/Gemfile
+
 # Set the working directory
 WORKDIR /usr/src/app
 
 # Set permissions for the working directory
-RUN chown -R vscode:vscode /usr/src/app
+RUN chown -R vscode:vscode /usr/src/app /usr/src/gems
 
 # Switch to the non-root user
 USER vscode
 
-# Copy Gemfile and lock into the container (necessary for `bundle install`)
-COPY Gemfile Gemfile.lock ./
-
-# Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
+# Install dependencies (lockfile is generated inside the image)
 RUN bundle install
 
 # Command to serve the Jekyll site
-CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w"]
-
+CMD ["bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0", "-w"]
