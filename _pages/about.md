@@ -4,18 +4,15 @@ author_profile: true
 redirect_from:
   - /about/
   - /about.html
+header:
+  image: header.jpg
+  caption: "Golden Gate Bridge at Sunset"
 ---
 
 <style>
-  /* 페이지 제목 자리에 헤더 사진을 본문 폭에 맞춰 원본 비율로 넣는다. .page__content img의 max-width: 450px보다 특이도를 높여야 한다 */
-  .page__content .page__hero-image { max-width: none; }
-  .page__content figure.page__hero { margin-top: 0; }
+  /* 테마의 검은 오버레이 캡션 대신 GitHub 프로필처럼 이미지 아래 이탤릭 캡션으로 표시한다 */
+  .page__hero-caption { position: static; display: block; padding: 0; color: inherit; background: none; font-style: italic; text-align: center; }
 </style>
-
-<figure class="page__hero">
-  <img src="/contents/images/header.jpg" alt="Golden Gate Bridge at Sunset" class="page__hero-image">
-  <figcaption><i>Golden Gate Bridge at Sunset</i></figcaption>
-</figure>
 
 <div data-content-lang="en" markdown="1">
 

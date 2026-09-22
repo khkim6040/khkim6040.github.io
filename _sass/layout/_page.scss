@@ -134,6 +134,13 @@
   animation: intro 0.3s both;
   animation-delay: 0.25s;
 
+  // #main 안에 있으므로 데스크톱에서는 .page와 같은 본문 컬럼에 맞춘다
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(2 of 12);
+  }
+
   &--overlay {
     position: relative;
     margin-bottom: 2em;

@@ -4,10 +4,6 @@ layout: default
 
 {% include base_path %}
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
-
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
@@ -15,6 +11,10 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
+  {% comment %} 모바일에서 사이드바(author profile)보다 위에 오도록 #main 안 사이드바 앞에 둔다 {% endcomment %}
+  {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+    {% include page__hero.html %}
+  {% endif %}
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
