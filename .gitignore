@@ -26,3 +26,8 @@ CLAUDE.md
 
 # Handoff documents
 **/HANDOFF.md
+# Local tool/session artifacts and personal notes
+.omc/
+.playwright-mcp/
+docs/superpowers/
+personal-project/
